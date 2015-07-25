@@ -1,0 +1,13 @@
+language: python
+
+python:
+  - 3.4
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - tox  # TODO run sphinx to build.
+
+after_success:
+  - selfcov run  # TODO commit to master and push.
