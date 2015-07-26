@@ -1,22 +1,19 @@
-.. Robpol86.com documentation master file, created by
-   sphinx-quickstart on Sat Jul 25 17:08:52 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Main
+====
 
-Welcome to Robpol86.com's documentation!
-========================================
+Welcome to my website, where I host random guides/articles and other stuff.
 
-Contents:
+Contents
+--------
 
 .. toctree::
    :maxdepth: 2
 
+   ImageCFG
 
-
-Indices and tables
-==================
+Indices
+-------
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
