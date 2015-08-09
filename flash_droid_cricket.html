@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Flashing Motorola Droid to Cricket &mdash; Robpol86.com</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Robpol86.com" href="index.html"/>
+        <link rel="next" title="Jetta SportWagen TDI" href="vw_jsw_2010.html"/>
+        <link rel="prev" title="Atrix Lapdock Other Uses" href="atrix_lapdock.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Robpol86.com
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="imagecfg.html">ImageCFG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="imagecfg.html#history">History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imagecfg.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imagecfg.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imagecfg.html#download">Download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imagecfg.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rns_510_vim.html">US RNS-510 Video In Motion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rns_510_vim.html#background">Background</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rns_510_vim.html#vim-berto89-iso">VIM_Berto89.iso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rns_510_vim.html#recode-berto89-iso">RECODE_Berto89.iso</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rns_510_vim.html#procedure">Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rns_510_vim.html#download">Download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rns_510_vim.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rns_510_vim.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wireless_charging_car_dock.html">Wireless Charging Car Dock</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wireless_charging_car_dock.html#previous-implementation">Previous Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wireless_charging_car_dock.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="atrix_lapdock.html">Atrix Lapdock Other Uses</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="atrix_lapdock.html#pictures-and-videos">Pictures and Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atrix_lapdock.html#with-a-nexus-4">With a Nexus 4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="atrix_lapdock.html#using-usb-otg">Using USB OTG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atrix_lapdock.html#using-usb-otg-and-miracast">Using USB OTG and Miracast</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atrix_lapdock.html#with-a-raspberry-pi">With a Raspberry Pi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atrix_lapdock.html#with-a-laptop">With a Laptop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atrix_lapdock.html#with-a-wii">With a Wii</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atrix_lapdock.html#lapdock-500-teardown">Lapdock 500 Teardown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atrix_lapdock.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Flashing Motorola Droid to Cricket</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preface">Preface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#software">Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#service">Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nvram-items">NVRAM Items</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-service">Installing Service</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-the-phone">Flashing the Phone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuring-apns">Configuring APNs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vw_jsw_2010.html">Jetta SportWagen TDI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vw_jsw_2010.html#routing-usb-cable">Routing USB Cable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="vw_jsw_2010.html#step-1-remove-shifter-boot-and-cubby">Step 1: Remove Shifter Boot and Cubby</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vw_jsw_2010.html#step-2-remove-head-unit">Step 2: Remove Head Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vw_jsw_2010.html#step-3-remove-air-vents">Step 3: Remove Air Vents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vw_jsw_2010.html#step-4-run-cable-through-vents">Step 4: Run Cable through Vents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vw_jsw_2010.html#step-5-reassembling-everything">Step 5: Reassembling Everything</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vw_jsw_2010.html#step-6-run-cable-through-cubby">Step 6: Run Cable through Cubby</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vw_jsw_2010.html#delivery">Delivery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vw_jsw_2010.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="photo_albums.html">Photo Albums</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="photo_albums.html#rack-cabinet">Rack Cabinet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="photo_albums.html#july-13th-2015">July 13th, 2015</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="photo_albums.html#comments">Comments</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Robpol86.com</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Flashing Motorola Droid to Cricket</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/selfcov/robpol86.com/blob/master/docs/flash_droid_cricket.rst" class="fa fa-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="flashing-motorola-droid-to-cricket">
+<span id="flash-droid-cricket"></span><h1>Flashing Motorola Droid to Cricket<a class="headerlink" href="#flashing-motorola-droid-to-cricket" title="Permalink to this headline">¶</a></h1>
+<p>This guide will explain how to flash a Motorola Droid from Verizon to Cricket based on my experiences. The two
+(similar) guides I followed had some inconsistencies and confused me until I pieced together clues from other sources.
+My guide will explain the exact steps I took to get my Droid working on <strong>Cricket&#8217;s $55 Android plan</strong>.</p>
+<p>I used the following resources for my guide:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://forum.xda-developers.com/showthread.php?t=708937">https://forum.xda-developers.com/showthread.php?t=708937</a></li>
+<li><a class="reference external" href="https://www.whiterabbit.org/android/">https://www.whiterabbit.org/android/</a></li>
+</ul>
+<p>After flashing, everything works for me except sending <a class="reference external" href="https://en.wikipedia.org/wiki/Concatenated_SMS">long SMS</a>
+(multipart texts that require two or more messages to be sent).</p>
+<ul class="simple">
+<li>Placing and receiving calls work.</li>
+<li>Writing and receiving normal SMS works (receiving long SMS works).</li>
+<li>Receiving MMS works (sending MMS started working magically after 12 hours).</li>
+<li>Data works fine, including the Market.</li>
+</ul>
+<p>This guide will explain how to get a Motorola Droid (US, CDMA, Verizon version; not the GSM Milestone) from Verizon to
+Cricket using a new $55/mo Android plan.</p>
+<div class="section" id="preface">
+<h2>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">¶</a></h2>
+<p>I decided to break my contract with Verizon and incur a $95 ETF to port my number to Google Voice once I discovered I
+could make/receive Gvoice calls for free <a class="reference external" href="http://www.obihai.com/product-primer.html">using a $50 device</a> with my
+landline telephones. When I ported my number on Saturday, it took 23.5 hours to finish porting on Sunday. On that day I
+called Verizon to get a new phone number, but the representative informed me I will have to wait 7 days to reactivate
+my phone without disturbing the porting process. I didn&#8217;t want to risk losing my number so I decided to just wait a
+week.</p>
+<p>I checked how much the rate would be on Verizon without a contract (I&#8217;m waiting on a Webtop phone with an unlocked
+bootloader) thinking it would be the same, but I found out it was $5/mo more than with a contract. Since then, I made
+my mind up to move to Cricket while I waited for a phone I liked to come out.</p>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="software">
+<h3>Software<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Motorola Droid (US version, not the Milestone), rooted (probably) with SPRecovery (probably).</li>
+<li><a class="reference external" href="https://www.motorola.com/consumers/v/index.jsp?vgnextoid=bda09ec8009a0210VgnVCM1000008806b00aRCRD">Drivers for your phone</a>.</li>
+<li>(probably?) <a class="reference external" href="https://developer.android.com/sdk/index.html">Android SDK</a>.</li>
+<li>Unzip this to get 42900.prl: <a class="reference download internal" href="_downloads/42900.zip"><code class="xref download docutils literal"><span class="pre">42900.zip</span></code></a></li>
+<li><a class="reference external" href="http://www.hw-group.com/products/hw_vsp/index_en.html#DOWNLOAD">HW VSP Singleport 3.1.2</a></li>
+<li>CDMA Workshop 2.7 (google it).</li>
+<li>QPST 2.7.355 (google it).</li>
+</ol>
+</div>
+<div class="section" id="service">
+<h3>Service<a class="headerlink" href="#service" title="Permalink to this headline">¶</a></h3>
+<p>You will need an <code class="docutils literal"><span class="pre">MIN</span></code> (Mobile Identification Number) and an <code class="docutils literal"><span class="pre">MDN</span></code> (Mobile Device Number). Your <code class="docutils literal"><span class="pre">MDN</span></code> is your phone
+number, from this point on I will refer to it as your <strong>phone number</strong>. In order to obtain these two values, you will
+need to already have an account with Cricket. If you already have these two values from Cricket, skip this section.
+Otherwise I will explain how to get these numbers by signing up with Cricket before flashing your phone. You will have
+to pay for service up front ($55 for the first month, $15 activation, and tax). You can probably do this online but I
+went to a local Cricket store.</p>
+<p>In order to sign up with Cricket, you will need your <code class="docutils literal"><span class="pre">MEID</span></code> (Mobile Equipment Identifier) from your phone. You can get
+your <code class="docutils literal"><span class="pre">MEID</span></code> from Android but it will be the HEX version, and Cricket needs it in DEC. To avoid converting hex to dec,
+poweroff your phone and remove the battery. On the label beneath the battery on your phone you will find both HEX and
+DEC <code class="docutils literal"><span class="pre">MEID</span></code>. You can either write down the DEC <code class="docutils literal"><span class="pre">MEID</span></code>, or better yet, take your phone to Cricket so they can scan the
+barcode beneath it instead of manually typing the <code class="docutils literal"><span class="pre">MEID</span></code>.</p>
+<p>Go to the Cricket store with your phone/<code class="docutils literal"><span class="pre">MEID</span></code> and ask to sign up for the $55 Android plan. Tell them you will flash
+your phone later and all you will need is your phone number and your <code class="docutils literal"><span class="pre">MIN</span></code>. When they sign you up, they will print out
+a paper with both of these values. Make sure your <code class="docutils literal"><span class="pre">MIN</span></code> and phone number are on it.</p>
+<p>When you have your phone number and <code class="docutils literal"><span class="pre">MIN</span></code>, continue on to the next section.</p>
+</div>
+<div class="section" id="nvram-items">
+<h3>NVRAM Items<a class="headerlink" href="#nvram-items" title="Permalink to this headline">¶</a></h3>
+<p>Once you have your <code class="docutils literal"><span class="pre">MIN</span></code> and phone number:</p>
+<ol class="arabic simple">
+<li>Generate a <strong>CDMA Workshop 2.7</strong> NVRAM file from here: <a class="reference external" href="https://www.whiterabbit.org/android/">https://www.whiterabbit.org/android/</a></li>
+<li>Where it says <strong>Enter your login string</strong>: enter <strong>0000000000&#64;mycricket.com</strong> (replace zeros with your ten-digit
+phone number).</li>
+<li>Click <strong>Generate</strong>, it will download a text file roughly 6 KB in size.</li>
+<li>This is your NVRAM Items file.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="installing-service">
+<h2>Installing Service<a class="headerlink" href="#installing-service" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://imgur.com/SndBdi5"><img alt="https://i.imgur.com/SndBdi5b.jpg" src="https://i.imgur.com/SndBdi5b.jpg" style="width: 24%;" /></a>
+<a class="reference external image-reference" href="https://imgur.com/2s0oJBW"><img alt="https://i.imgur.com/2s0oJBWb.jpg" src="https://i.imgur.com/2s0oJBWb.jpg" style="width: 24%;" /></a>
+<a class="reference external image-reference" href="https://imgur.com/sWaejkq"><img alt="https://i.imgur.com/sWaejkqb.jpg" src="https://i.imgur.com/sWaejkqb.jpg" style="width: 24%;" /></a>
+<a class="reference external image-reference" href="https://imgur.com/IJgDFM4"><img alt="https://i.imgur.com/IJgDFM4b.jpg" src="https://i.imgur.com/IJgDFM4b.jpg" style="width: 24%;" /></a>
+<div class="section" id="flashing-the-phone">
+<h3>Flashing the Phone<a class="headerlink" href="#flashing-the-phone" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Plug your phone into your computer and turn off the phone.</p>
+</li>
+<li><p class="first">Slide out the keyboard and hold the <cite>T</cite> key while you press the power button for five seconds (probably unnecessary
+but that&#8217;s what I did).</p>
+</li>
+<li><p class="first">Keep holding <cite>T</cite> until Android boots up as normal.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Open HW Virtual Serial Port.</dt>
+<dd><ol class="first last arabic simple">
+<li>Click on the Settings tab.</li>
+<li>Uncheck <strong>NVT Enabled</strong>.</li>
+<li>Click on the Virtual Serial Port tab.</li>
+<li>Set Port Name to <strong>COM10</strong>.</li>
+<li>Set IP Address to <strong>192.168.16.2</strong>.</li>
+<li>Set Port to <strong>11008</strong>.</li>
+<li>Click on <strong>Create COM</strong> at the bottom and wait about 10 seconds.</li>
+<li>Make sure VSP Status is <strong>Created</strong> and LAN Status is <strong>Connected</strong>.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Open CDMA Workshop v2.7.0</dt>
+<dd><ol class="first last arabic">
+<li><dl class="first docutils">
+<dt>Under &#8220;COM Settings (AT mode)&#8221; set Port to <strong>COM10</strong> and click <strong>Connect</strong>.</dt>
+<dd><ol class="first last arabic simple">
+<li>The status bar at the bottom should read &#8220;Connected to COM10 port successfully&#8221;.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Click on the Security tab, and in the small text field under &#8220;SPC&#8221; type <strong>000000</strong> and click on SPC, then Send.</dt>
+<dd><ol class="first last arabic simple">
+<li>A box will pop up and say &#8220;SPC is correct. Phone unlocked&#8221;.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">Click on the Other tab, and under &#8220;PRL&#8221; click on Write and browse to <strong>42900.prl</strong>.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Click on the Nam tab.</dt>
+<dd><ol class="first last arabic simple">
+<li>Type your ten-digit <code class="docutils literal"><span class="pre">MIN</span></code> where it says MIN.</li>
+<li>Type your ten-digit phone number where it says <strong>Dir_Number</strong>.</li>
+<li>Click on Write.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Click on the Memory tab, and under &#8220;NV Items&#8221; click Write.</dt>
+<dd><ol class="first last arabic simple">
+<li>It will say &#8220;You must send current SPC...&#8221; click OK.</li>
+<li>Browse to the NVRAM items text file you generated earlier.</li>
+<li>It should say it wrote 12 items to the phone.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">Click on the Main tab, and at the bottom click on the Mode button, then Reset.</p>
+</li>
+<li><p class="first">Your phone should reboot. Hold down <cite>T</cite> again like you did before.</p>
+</li>
+<li><p class="first">Close CDMA Workshop.</p>
+</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Go back to HW Virtual Serial Port and click <strong>Delete COM</strong>. Then do Create COM like you did before.</dt>
+<dd><ol class="first last arabic simple">
+<li>If both statuses aren&#8217;t Created and Connected, power off your phone and hold <cite>T</cite> while powering it on like
+before.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Open QPST Configuration from the Start Menu.</dt>
+<dd><ol class="first last arabic">
+<li><dl class="first docutils">
+<dt>Click on the Ports tab and click on the <strong>Add New Port...</strong> button.</dt>
+<dd><ol class="first last arabic simple">
+<li>Select <strong>COM10 - Serial</strong> and click OK.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">After a few seconds the Phone column should have <strong>SURFQSC6055 (NAND)...</strong> underneath it.</p>
+</li>
+<li><p class="first">Click on Start Clients at the top, then Service Programming.</p>
+</li>
+<li><p class="first">A new window will open, you should see <strong>Sholes P3</strong> under Banner. Click OK.</p>
+</li>
+<li><dl class="first docutils">
+<dt>At the bottom click on <strong>Read from Phone</strong>. If not already, type <strong>000000</strong> and click OK.</dt>
+<dd><ol class="first last arabic simple">
+<li>The progress bar should gradually increase and complete after about two or four minutes.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">Click on the M.IP tab, and set &#8220;Mobile IP Behavior&#8221; to <strong>Mob + Simp f/back</strong>.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Double click on the first row in User Profile.</dt>
+<dd><ol class="first last arabic simple">
+<li>Set NAI and Tethered NAI to <strong>0000000000&#64;mycricket.com</strong> (replace zeros with your phone number) and click OK.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Click on the PPP Config tab and click on the <strong>Um</strong> button.</dt>
+<dd><ol class="first last arabic simple">
+<li>Set Tethered NAI and User ID to the same thing (<a class="reference external" href="mailto:phonenumber&#37;&#52;&#48;mycricket&#46;com">phonenumber<span>&#64;</span>mycricket<span>&#46;</span>com</a>) and Password to <strong>cricket</strong>.</li>
+<li>Click on the <strong>AN</strong> button at the top and do the same.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">Click on <strong>Write to Phone</strong> on the bottom. If your phone does not reboot, reboot it.</p>
+</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">Close all QPST windows as well as the HW Virtual Serial Port (Delete COM first).</p>
+</li>
+</ol>
+</div>
+<div class="section" id="configuring-apns">
+<h3>Configuring APNs<a class="headerlink" href="#configuring-apns" title="Permalink to this headline">¶</a></h3>
+<a class="reference external image-reference" href="https://imgur.com/NqeznNP"><img alt="https://i.imgur.com/NqeznNPl.jpg" src="https://i.imgur.com/NqeznNPl.jpg" style="width: 49%;" /></a>
+<a class="reference external image-reference" href="https://imgur.com/aHlRCy6"><img alt="https://i.imgur.com/aHlRCy6l.jpg" src="https://i.imgur.com/aHlRCy6l.jpg" style="width: 49%;" /></a>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>Once Android boots back up, open the app <strong>Voice Dialer</strong>.</dt>
+<dd><ol class="first last arabic simple">
+<li>Say aloud &#8220;Open APNs&#8221; and tap OK.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Tap on the text <strong>verizon</strong> and set the following settings:</dt>
+<dd><ol class="first last arabic simple">
+<li>Name: Cricket</li>
+<li>APN: internet</li>
+<li>Proxy: (blank the field)</li>
+<li>Port: (blank the field)</li>
+<li>Username: <a class="reference external" href="mailto:phonenumber&#37;&#52;&#48;mycricket&#46;com">phonenumber<span>&#64;</span>mycricket<span>&#46;</span>com</a></li>
+<li>Password: cricket</li>
+<li>Server: wap.mycricket.com</li>
+<li>MMSC: <a class="reference external" href="https://mms.mycricket.com/servlets/mms">https://mms.mycricket.com/servlets/mms</a></li>
+<li>MMS proxy: wap.mycricket.com</li>
+<li>MMS port: 8080</li>
+<li>MCC: 310</li>
+<li>MNC: 004</li>
+<li>Authentication type: PAP or CHAP</li>
+<li>APN type: (blank the field)</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">Reboot your phone and you are done.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<div data-disqus-identifier="Flashing Motorola Droid to Cricket" data-disqus-shortname="rob86wiki" id="disqus_thread"></div></div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="vw_jsw_2010.html" class="btn btn-neutral float-right" title="Jetta SportWagen TDI" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="atrix_lapdock.html" class="btn btn-neutral" title="Atrix Lapdock Other Uses" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on August 09, 2015.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  false
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/disqus.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30840244-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
