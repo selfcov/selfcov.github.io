@@ -106,6 +106,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#using-usb-otg-and-miracast">Using USB OTG and Miracast</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#with-a-raspberry-pi">With a Raspberry Pi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#with-a-laptop">With a Laptop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#with-a-wii">With a Wii</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lapdock-500-teardown">Lapdock 500 Teardown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a></li>
 </ul>
 </li>
@@ -231,6 +235,57 @@ shorter &#8220;paragraph&#8221; on my phone. Definitely working.</p>
 <p>It works, but it&#8217;s not really pleasant. If we can get Keyboard/Mouse to Bluetooth working that would be much better.</p>
 </div>
 </div>
+<div class="section" id="with-a-raspberry-pi">
+<h2>With a Raspberry Pi<a class="headerlink" href="#with-a-raspberry-pi" title="Permalink to this headline">¶</a></h2>
+<p>The Lapdock works great with the Raspberry Pi, but with a few caveats:</p>
+<ul class="simple">
+<li>Every time the Lapdock&#8217;s lid is opened or closed, power is cut off the RPI for a second, causing it to reboot.</li>
+<li>There is no &#8220;off&#8221; mode. When the lid is closed, power is cut off for a second, but then returned, so the RPI will
+power back on.</li>
+</ul>
+<p>Adapters used:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.dealextreme.com/p/hdmi-male-to-micro-hdmi-female-adapter-66079">HDMI Male to Micro HDMI Female</a></li>
+<li><a class="reference external" href="https://www.ebay.com/itm/ws/eBayISAPI.dll?ViewItem&amp;item=270928425953">Micro USB B Male to Female</a></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Raspberry Pi only supports power from its micro USB port, and the regular USB ports on the RPI won&#8217;t allow
+enough power through. So I had to splice another USB cable into the micro USB extension and route the USB data
+cables (green and white) to the spliced cable.</p>
+</div>
+<a class="reference external image-reference" href="https://imgur.com/cZR03"><img alt="https://i.imgur.com/cZR03m.jpg" src="https://i.imgur.com/cZR03m.jpg" style="width: 33%;" /></a>
+<a class="reference external image-reference" href="https://imgur.com/MrTBN"><img alt="https://i.imgur.com/MrTBNm.jpg" src="https://i.imgur.com/MrTBNm.jpg" style="width: 33%;" /></a>
+<a class="reference external image-reference" href="https://imgur.com/vCYfG"><img alt="https://i.imgur.com/vCYfGm.jpg" src="https://i.imgur.com/vCYfGm.jpg" style="width: 33%;" /></a>
+</div>
+<div class="section" id="with-a-laptop">
+<h2>With a Laptop<a class="headerlink" href="#with-a-laptop" title="Permalink to this headline">¶</a></h2>
+<p>I can use the Atrix Lapdock as a secondary display for my laptop. At home my laptop is docked to two monitors, so every
+time I traveled I had to deal with a single monitor. Not anymore! Adapters used:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.dealextreme.com/p/hdmi-male-to-micro-hdmi-female-adapter-66079">HDMI Male to Micro HDMI Female</a></li>
+<li>HDMI Female/Female Coupler</li>
+</ul>
+<a class="reference external image-reference" href="https://imgur.com/ldQ0c"><img alt="https://i.imgur.com/ldQ0cl.jpg" src="https://i.imgur.com/ldQ0cl.jpg" style="width: 49%;" /></a>
+<a class="reference external image-reference" href="https://imgur.com/KONZZ"><img alt="https://i.imgur.com/KONZZl.jpg" src="https://i.imgur.com/KONZZl.jpg" style="width: 49%;" /></a>
+</div>
+<div class="section" id="with-a-wii">
+<h2>With a Wii<a class="headerlink" href="#with-a-wii" title="Permalink to this headline">¶</a></h2>
+<p>I don&#8217;t have a 360 or PS3, but I have a Wii and after I found an HDMI adapter I tried it with the Lapdock. Turns out it
+works just fine. The Lapdock takes care of changing resolution as long as it&#8217;s at or below 1366x768. Audio works too by
+the way. This should work just fine with the Xbox 360, PS3, or any other HDMI devices. Adapters used:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.dealextreme.com/p/hdmi-male-to-micro-hdmi-female-adapter-66079">HDMI Male to Micro HDMI Female</a></li>
+<li>HDMI Female/Female Coupler</li>
+<li><a class="reference external" href="https://www.amazon.com/gp/product/B0057UNPQO/">Wii HDMI Adapter</a></li>
+</ul>
+<a class="reference external image-reference" href="https://imgur.com/TXiVx"><img alt="https://i.imgur.com/TXiVxm.jpg" src="https://i.imgur.com/TXiVxm.jpg" style="width: 33%;" /></a>
+<a class="reference external image-reference" href="https://imgur.com/UkdYJ"><img alt="https://i.imgur.com/UkdYJm.jpg" src="https://i.imgur.com/UkdYJm.jpg" style="width: 33%;" /></a>
+<a class="reference external image-reference" href="https://imgur.com/cc5TK"><img alt="https://i.imgur.com/cc5TKm.jpg" src="https://i.imgur.com/cc5TKm.jpg" style="width: 33%;" /></a>
+</div>
+<div class="section" id="lapdock-500-teardown">
+<h2>Lapdock 500 Teardown<a class="headerlink" href="#lapdock-500-teardown" title="Permalink to this headline">¶</a></h2>
+<blockquote class="imgur-embed-pub" data-id="a/UDZs7" lang="en"><a class="reference external" href="https://imgur.com/a/UDZs7">Loading...</a></blockquote><script async="" charset="utf-8" src="//s.imgur.com/min/embed.js"></script></div>
 <div class="section" id="comments">
 <h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
 <div data-disqus-identifier="Atrix Lapdock Other Uses" data-disqus-shortname="rob86wiki" id="disqus_thread"></div></div>
